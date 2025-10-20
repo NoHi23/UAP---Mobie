@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header chào + avatar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_person_circle"
+                    android:contentDescription="Avatar"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Corner.Full"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E5E7EB" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="14dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phạm Đức Thắng"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#1A1A1A" />
+
+                    <TextView
+                        android:id="@+id/tvStudentCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mã SV: 64E11225756"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Khối thông tin chi tiết -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Mỗi dòng 2 cột: tiêu đề + giá trị -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/row_profile_item"
+                        android:id="@+id/row_email_school"
+                        android:tag="Email trường|thang.pd64@neu.edu.vn" />
+
+                    <include
+                        layout="@layout/row_profile_item"
+                        android:id="@+id/row_email_personal"
+                        android:tag="Email cá nhân|thangpd@example.com" />
+
+                    <include
+                        layout="@layout/row_profile_item"
+                        android:id="@+id/row_major"
+                        android:tag="Chuyên ngành|Tài chính – Ngân hàng" />
+
+                    <include
+                        layout="@layout/row_profile_item"
+                        android:id="@+id/row_phone"
+                        android:tag="Số điện thoại|0901 234 567" />
+
+                    <include
+                        layout="@layout/row_profile_item"
+                        android:id="@+id/row_gender"
+                        android:tag="Giới tính|Nam" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
