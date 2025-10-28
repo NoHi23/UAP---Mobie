@@ -80,12 +80,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Từ FPTU" />
+                android:text="@string/from_FPTU" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Từ Lớp Học" />
+                android:text="@string/from_Class" />
 
         </com.google.android.material.tabs.TabLayout>
 
