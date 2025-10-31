@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">UAP Mobie</string>
+    <string name="materials">Materials</string>
+    <string name="Materials_Name">TextView</string>
+    <string name="materials_name">Materials Name</string>
+    <string name="description_back_button">description_back_button</string>
+    <string name="from_FPTU">Từ FPTU</string>
+    <string name="from_Class">Từ Lớp Học</string>
 </resources>
