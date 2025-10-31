@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá giảng viên"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Card chứa form -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Hiển thị tên giảng viên -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tên giảng viên:"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/tvLecturerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đang tải..."
+                    android:textColor="#555555"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Câu hỏi 1 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1. Giảng viên giảng dạy dễ hiểu"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <RadioButton
+                        android:id="@+id/rbQ1Option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rất đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ1Option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ1Option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Không đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ1Option4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoàn toàn không đồng ý" />
+                </RadioGroup>
+
+                <!-- Câu hỏi 2 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="2. Giảng viên tương tác tốt với sinh viên"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <RadioGroup
+                    android:id="@+id/rgQuestion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <RadioButton
+                        android:id="@+id/rbQ2Option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rất đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ2Option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ2Option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Không đồng ý" />
+
+                    <RadioButton
+                        android:id="@+id/rbQ2Option4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hoàn toàn không đồng ý" />
+                </RadioGroup>
+
+                <!-- Ô nhập ý kiến thêm -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="3. Ý kiến khác (nếu có)"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <EditText
+                    android:id="@+id/edtAdditionalComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    android:hint="Nhập ý kiến của bạn"
+                    android:inputType="textMultiLine" />
+
+                <!-- Nút gửi -->
+                <Button
+                    android:id="@+id/btnSubmitEvaluation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Gửi đánh giá"
+                    style="?attr/materialButtonOutlinedStyle" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
