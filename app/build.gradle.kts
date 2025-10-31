@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.google.android.material:material:1.13.0")
     implementation(libs.appcompat)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
@@ -40,4 +40,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }
