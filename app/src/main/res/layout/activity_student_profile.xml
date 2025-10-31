@@ -84,28 +84,28 @@
                     android:orientation="vertical">
 
                     <include
-                        layout="@layout/row_profile_item"
                         android:id="@+id/row_email_school"
+                        layout="@layout/row_profile_item"
                         android:tag="Email trường|thang.pd64@neu.edu.vn" />
 
                     <include
-                        layout="@layout/row_profile_item"
                         android:id="@+id/row_email_personal"
+                        layout="@layout/row_profile_item"
                         android:tag="Email cá nhân|thangpd@example.com" />
 
                     <include
-                        layout="@layout/row_profile_item"
                         android:id="@+id/row_major"
+                        layout="@layout/row_profile_item"
                         android:tag="Chuyên ngành|Tài chính – Ngân hàng" />
 
                     <include
-                        layout="@layout/row_profile_item"
                         android:id="@+id/row_phone"
+                        layout="@layout/row_profile_item"
                         android:tag="Số điện thoại|0901 234 567" />
 
                     <include
-                        layout="@layout/row_profile_item"
                         android:id="@+id/row_gender"
+                        layout="@layout/row_profile_item"
                         android:tag="Giới tính|Nam" />
                 </LinearLayout>
             </LinearLayout>
