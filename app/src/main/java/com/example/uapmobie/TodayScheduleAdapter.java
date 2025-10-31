@@ -52,7 +52,8 @@ public class TodayScheduleAdapter extends RecyclerView.Adapter<TodayScheduleAdap
             tvCourseName = itemView.findViewById(R.id.tvCourseName);
             tvStartPeriod = itemView.findViewById(R.id.tvStartPeriod);
             tvEndPeriod = itemView.findViewById(R.id.tvEndPeriod);
-
+            tvLecturer = itemView.findViewById(R.id.tvLecturer);
+            tvRoom = itemView.findViewById(R.id.tvRoom);
         }
     }
 }
