@@ -44,16 +44,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        tvWelcomeMessage = findViewById(R.id.tvWelcomeMessage); // Giả sử bạn có id này
-        tvGpa = findViewById(R.id.tvGpa); // Giả sử bạn có id này
-        rvTodaySchedule = findViewById(R.id.rvTodaySchedule); // Giả sử bạn có id này
+        tvWelcomeMessage = findViewById(R.id.tvWelcomeMessage);
+        tvGpa = findViewById(R.id.tvGpa);
+        rvTodaySchedule = findViewById(R.id.rvTodaySchedule);
 
-        cvTimetable = findViewById(R.id.cvTimetable); // Đặt ID cho các card chức năng
+        cvTimetable = findViewById(R.id.cvTimetable);
         cvExamSchedule = findViewById(R.id.cvExamSchedule);
         cvResults = findViewById(R.id.cvResults);
         cvInvoices = findViewById(R.id.cvInvoices);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation); // Giả sử bạn có id này
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
     }
 
     private void loadUserData() {
