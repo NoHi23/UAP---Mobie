@@ -52,7 +52,7 @@
         android:id="@+id/iconDownload"
         android:layout_width="52dp"
         android:layout_height="40dp"
-        android:contentDescription="Tải xuống"
+        android:contentDescription="Downloađing"
         android:src="@drawable/ic_download_24dp_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
