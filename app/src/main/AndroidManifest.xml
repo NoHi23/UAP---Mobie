@@ -23,6 +23,8 @@
 
         <activity android:name=".TimetableActivity" />
         <activity android:name=".ExamScheduleActivity" />
+        <activity android:name=".PayTuitionActivity" />
+        <activity android:name=".TransactionHistoryActivity" />
     </application>
 
 </manifest>
