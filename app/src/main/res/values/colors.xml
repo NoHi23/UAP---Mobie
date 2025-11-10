@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#878181</color>
+    <color name="orange">#F67F02</color>
+    <color name="colorPrimary">#007BFF</color> <!-- Xanh dương hiện đại -->
+    <color name="colorTimeText">#007BFF</color> <!-- Tên khác cho colorPrimary nếu bạn muốn tách biệt -->
+    <color name="colorTextDark">#333333</color>
+    <color name="colorTextSecondary">#777777</color>
 </resources>
