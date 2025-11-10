@@ -1,12 +1,8 @@
 package com.uap.data.remote.response;
 
+import androidx.annotation.NonNull;
+
 import com.uap.domain.model.User;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
 
 public class LoginResponse {
     private String message;
@@ -44,5 +40,16 @@ public class LoginResponse {
 
     public void setPasswordChangeRequired(boolean passwordChangeRequired) {
         this.passwordChangeRequired = passwordChangeRequired;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "LoginResponse{" +
+                "message='" + message + '\'' +
+                ", token='" + token + '\'' +
+                ", user=" + user +
+                ", passwordChangeRequired=" + passwordChangeRequired +
+                '}';
     }
 }

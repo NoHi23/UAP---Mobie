@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UAP Mobie"
+rootProject.name = "UAP"
 include(":app")
  
