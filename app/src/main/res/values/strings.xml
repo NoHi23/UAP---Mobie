@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">UAP Mobie</string>
+    <string name="app_name">UAP - University Academic Portal</string>
+    <string-array name="request_types">
+        <item>Xác nhận sinh viên</item>
+        <item>Xin bảo lưu</item>
+        <item>Xin nghỉ học</item>
+        <item>Xin học lại</item>
+    </string-array>
+
+    <string name="chon_loai_don">Chọn loại đơn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

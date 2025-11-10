@@ -10,9 +10,10 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.uap.R;
-import com.uap.auth.AuthManager;
+import com.uap.data.local.AuthManager;
 
 
+@SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
 
     private static final int SPLASH_DURATION = 2000; // 2 giây
@@ -29,7 +30,11 @@ public class SplashActivity extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
             if (AuthManager.isLoggedIn(this)) {
-                startActivity(new Intent(this, MainActivity.class));
+                if(AuthManager.getRole(this).equalsIgnoreCase("lecturer") || AuthManager.getRole(this).equalsIgnoreCase("lecture")){
+                    startActivity(new Intent(this, TeacherMainActivity.class));
+                }else{
+                    startActivity(new Intent(this, StudentMainActivity.class));
+                }
             } else {
                 startActivity(new Intent(this, LoginActivity.class));
             }

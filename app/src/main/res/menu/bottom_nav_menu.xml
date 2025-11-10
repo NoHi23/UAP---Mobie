@@ -5,13 +5,13 @@
         android:icon="@drawable/ic_calendar"
         android:title="Lịch học"/>
     <item
-        android:id="@+id/nav_category"
-        android:icon="@drawable/ic_category"
-        android:title="Danh mục"/>
+        android:id="@+id/nav_exam_schedule"
+        android:icon="@drawable/ic_results"
+        android:title="Lịch thi"/>
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_school"
-        android:title="NEU"/>
+        android:title="Trang chủ"/>
     <item
         android:id="@+id/nav_notifications"
         android:icon="@drawable/ic_notifications"
