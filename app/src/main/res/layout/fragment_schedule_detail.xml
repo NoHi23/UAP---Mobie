@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Thông báo"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAnnouncements"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:overScrollMode="never"
+        android:paddingTop="4dp"/>
+
+    <TextView
+        android:text="Danh sách sinh viên"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddAnnouncement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm thông báo"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"/>
+</LinearLayout>

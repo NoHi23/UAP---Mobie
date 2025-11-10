@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spRequestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/request_types"
+        android:prompt="@string/chon_loai_don" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề đơn"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Nội dung mô tả"
+        android:gravity="top"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
