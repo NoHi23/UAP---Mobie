@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.uap.R;
-import com.uap.auth.AuthManager;
-import com.uap.ui.fragments.student.StudentAnnouncementsFragment;
+import com.uap.data.local.AuthManager;
+import com.uap.ui.fragments.AnnouncementsFragment;
 import com.uap.ui.fragments.student.StudentExamFragment;
 import com.uap.ui.fragments.student.StudentHomeFragment;
 import com.uap.ui.fragments.student.StudentProfileFragment;
@@ -65,7 +65,7 @@ public class StudentMainActivity extends AppCompatActivity {
                 f = new StudentProfileFragment();
                 setTitle("Thông tin sinh viên");
             } else if (itemId == R.id.nav_notifications) {
-                f = new StudentAnnouncementsFragment();
+                f = new AnnouncementsFragment();
                 setTitle("Thông báo");
             }
             if (f != null) {
